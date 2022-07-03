@@ -9,7 +9,7 @@ function getCurrenciesRates() {
     .then(response => response.json())
     .then(data => {
       let rate = data.conversion_rates[currencyTo];
-      rateEl.innerText = `1 ${currencyFrom} = ${rate.toFixed(2)} ${currencyTo}`;
+      rateEl.innerText = `1 ${currencyFrom} = ${rate} ${currencyTo}`;
 
       elAmountTo.value = (elAmountFrom.value * rate).toFixed(2);
     })
