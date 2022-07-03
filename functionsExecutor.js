@@ -1,8 +1,0 @@
-'use strict';
-
-/*
-fillCurrencies();
-
-setDefaultSettings();
-
-*/
