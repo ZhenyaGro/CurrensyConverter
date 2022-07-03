@@ -36,6 +36,6 @@ swap.addEventListener('click', () => {
   elCurrencyFrom.value = elCurrencyTo.value;
   elCurrencyTo.value = temp;
   getCurrenciesRates();
-})
+});
 
 getCurrenciesRates();
