@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Конвертер валют</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,26 +16,46 @@
   <h1>Конвертер валют</h1>
   <!-- To add text "Base currency"-->
 
-  <div>
-    <div class="currency">
-
-      <select id="currencyFrom"></select>
-      <input type="number" id="amountFrom" placeholder="0" value="1" />
-
-      <div class="swapContainer">
-        <button class="btn" id="swap">Поменять местами</button>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="form-floating">
+          <select class="form-select" id="currencyFrom"></select>
+          <label for="floatingInputGrid">Базовая валюта</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="swapContainer">
+          <button class="btn btn-primary" id="swap">Поменять
+            местами</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-floating">
+          <select class="form-select" id="currencyTo">
+          </select>
+          <label for="floatingSelectGrid">Валюта конвертации</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input class="form-control" type="number" id="amountFrom" placeholder="0" value="1" />
+      </div>
+      <div class="col">
         <div class="rate" id="rate"></div>
       </div>
-
-      <select id="currencyTo"></select>
-      <input type="number" id="amountTo" placeholder="0" disabled="disabled" />
-
+      <div class="col">
+        <input class="form-control" type="number" id="amountTo" placeholder="0" disabled="disabled" />
+      </div>
     </div>
   </div>
 
   <script src="functions.js"></script>
   <script src="executor.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
