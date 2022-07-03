@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конвертер валют</title> <!-- Don't forget to chagne the title-->
+</head>
+
+<body>
+
+  <h1>Конвертер валют</h1>
+
+  <div class="container">
+    <div class="currency">
+      <select id="currencyFrom">
+        <option value="RUB">RUB</option>
+        <option value="USD" selected>USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+
+      <input type="number" id="amountFrom" placeholder="0" value="1" oninput="convertCurrensy(this.value)"
+        onchange="convertCurrensy(this.value)" />
+
+      <div class="swap-rate-container">
+        <div class="rate" id="rate"></div>
+        <button class="btn" id="swap">Поменять местами</button>
+      </div>
+
+      <select id="currencyTo">
+        <option value="RUB" selected>RUB</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <input type="number" id="amountTo" placeholder="0" />
+
+    </div>
+  </div>
+
+  <script src="convertCurrensy.js"></script>
+  <script src="defineLocal.js"></script>
+
+</body>
+
+</html>
