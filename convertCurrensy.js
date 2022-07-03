@@ -1,5 +1,5 @@
 'use strict';
-// Free api (1500 requests avaliable) https://app.exchangerate-api.com/dashboard/confirmed
+// Free api (1500 requests available) https://app.exchangerate-api.com/dashboard/confirmed
 
 const elCurrencyFrom = document.getElementById('currencyFrom');
 const elCurrencyTo = document.getElementById('currencyTo');
