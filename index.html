@@ -15,12 +15,8 @@
 
   <div>
     <div class="currency">
-      <select id="currencyFrom">
-        <option value="RUB">RUB</option>
-        <option value="USD" selected>USD</option>
-        <option value="EUR">EUR</option>
-      </select>
 
+      <select id="currencyFrom"></select>
       <input type="number" id="amountFrom" placeholder="0" value="1" />
 
       <div class="swapContainer">
@@ -28,16 +24,13 @@
         <div class="rate" id="rate"></div>
       </div>
 
-      <select id="currencyTo">
-        <option value="RUB" selected>RUB</option>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-      </select>
+      <select id="currencyTo"></select>
       <input type="number" id="amountTo" placeholder="0" disabled="disabled" />
 
     </div>
   </div>
 
+  <script src="currencies.js"></script>
   <script src="convertCurrensy.js"></script>
   <script src="defineLocal.js"></script>
 
