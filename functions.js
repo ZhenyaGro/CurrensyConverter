@@ -24,6 +24,7 @@ function setLanguage() {
   const userLanguage = window.navigator.language.substr(0, 2);
   let docLanguage = document.getElementsByTagName('html')[0].getAttribute('lang');
 
+  // If foreign user is locating at russian page
   if (docLanguage == 'ru' && userLanguage != 'ru') {
     const elLangNote = document.getElementById('langNote');
     const langNote = new bootstrap.Toast(elLangNote);
@@ -33,6 +34,8 @@ function setLanguage() {
 
     langNote.show();
   }
+
+  // If russian user is locating at english page
   if (docLanguage != 'ru' && userLanguage == 'ru') {
     const elLangNote = document.getElementById('langNote');
     const langNote = new bootstrap.Toast(elLangNote);
