@@ -53,11 +53,40 @@
     </div>
   </div>
 
-  <script src="functions.js"></script>
-  <script src="executor.js"></script>
+  <!-- If the app cannot get actual currencies rates -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="errorImg.svg" class="rounded me-2" alt="Ошибка">
+        <strong class="me-auto">Приложение</strong>
+        <small>Сейчас</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Не удалось получить актуальные курсы валют.
+        Возможно, неполадки с интернет-соединением или отсутствует доступ к курсам по API-Key (израсходовано 1500
+        запросов)
+      </div>
+    </div>
+  </div>
+
+  <!-- If needs to change language -->
+  <div class="toast" id="langNote" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      Your browser's language is not russian. Would you like to move to english page?
+      <div class="mt-2 pt-2 border-top">
+        <button id="btnChangeLang" type="button" class="btn btn-primary btn-sm">Change language</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+      </div>
+    </div>
+  </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+  <script src="functions.js"></script>
+  <script src="executor.js"></script>
 </body>
 
 </html>
