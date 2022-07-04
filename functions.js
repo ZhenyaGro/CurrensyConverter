@@ -10,29 +10,38 @@ function getCurrenciesRates() {
     .then(data => {
       let rate = data.conversion_rates[currencyTo];
       rateEl.innerText = `1 ${currencyFrom} = ${rate} ${currencyTo}`;
-
       elAmountTo.value = (elAmountFrom.value * rate).toFixed(2);
     })
-    .catch(error => console.log('Error of getting rates')); // Need to improve
+    .catch(() => {
+      const elErrNote = document.getElementById('liveToast');
+      const errNote = new bootstrap.Toast(elErrNote);
+      errNote.show();
+    });
 
-} // Need to add checking of errors (Internet connection or ran out of API requests)
+}
 
 function setLanguage() {
   const userLanguage = window.navigator.language.substr(0, 2);
-  let docLanguage = document.getElementsByTagName('html')[0].getAttribute('lang')
-  /*
+  let docLanguage = document.getElementsByTagName('html')[0].getAttribute('lang');
+
   if (docLanguage == 'ru' && userLanguage != 'ru') {
-    if (confirm(`Your browser's language is "${userLanguage}".
-    Would you like to move to english page?`)) {
-      window.location.href = 'index_en.html';
-    }
-  } else if (docLanguage != 'ru' && userLanguage == 'ru') {
-    if (confirm(`Язык Вашего браузера "русский".
-    Перейти на страницу с русским переводом?`)) {
-      window.location.href = 'index.html';
-    }
+    const elLangNote = document.getElementById('langNote');
+    const langNote = new bootstrap.Toast(elLangNote);
+
+    const btnChangeLang = document.getElementById('btnChangeLang');
+    btnChangeLang.addEventListener('click', () => window.location.href = 'index_en.html');
+
+    langNote.show();
   }
-  */
+  if (docLanguage != 'ru' && userLanguage == 'ru') {
+    const elLangNote = document.getElementById('langNote');
+    const langNote = new bootstrap.Toast(elLangNote);
+
+    const btnChangeLang = document.getElementById('btnChangeLang');
+    btnChangeLang.addEventListener('click', () => window.location.href = 'index.html');
+
+    langNote.show();
+  }
 }
 
 function fillCurrencies() {
