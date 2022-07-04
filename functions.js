@@ -5,6 +5,7 @@ function getCurrenciesRates() {
   let currencyFrom = elCurrencyFrom.value;
   let currencyTo = elCurrencyTo.value;
 
+  // Get actual currencies rates
   fetch(`https://v6.exchangerate-api.com/v6/f75e933545485ad498aef88d/latest/${currencyFrom}`)
     .then(response => response.json())
     .then(data => {
