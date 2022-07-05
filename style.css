@@ -13,3 +13,16 @@ h1 {
 .btn-danger {
   color: black;
 }
+
+.theCat {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.circle {
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
