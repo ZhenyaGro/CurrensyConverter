@@ -23,30 +23,39 @@
   </header>
 
   <main>
-    <div class="container">
-      <div>
+    <div class="container" id="test">
+      <div class="currencies">
         <select id="currencyFrom"></select>
         <label for="currencyFrom">Базовая валюта</label>
-        <div>
-          <button id="swap"><span>
-              sync_alt
-            </span></button>
-        </div>
-        <div>
-          <select id="currencyTo">
-          </select>
-          <label for="currencyTo">Валюта конвертации</label>
-        </div>
+        <button id="swap">sync_alt</button>
+        <select id="currencyTo"></select>
+        <label for="currencyTo">Валюта конвертации</label>
       </div>
-      <div>
+      <div class="amounts">
+        <input type="number" id="amountFrom" placeholder="0" value="1" />
+        <div id="rate"></div>
+        <input type="number" id="amountTo" placeholder="0" disabled="disabled" />
+      </div>
+      <div class="numpad">
         <div>
-          <input type="number" id="amountFrom" placeholder="0" value="1" />
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
         </div>
         <div>
-          <div id="rate"></div>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
         </div>
         <div>
-          <input type="number" id="amountTo" placeholder="0" disabled="disabled" />
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+        </div>
+        <div>
+          <button>&#9003;</button>
+          <button>0</button>
+          <button>.</button>
         </div>
       </div>
     </div>
@@ -55,9 +64,9 @@
     <!-- The ginger cat -->
     <div>
       <div style="text-align: right;">
-        <img class="catBody" src="images/bodyForCat.png" alt="">
-        <img id="theCat" class="theCat" src="images/theCat.svg" alt="Here was a cat &#128008;">
-        <script>rotateAnimation("theCat", 40);</script>
+        <img class="theCat" id="catBody" src="images/bodyForCat.png" alt="">
+        <img class="theCat" id="catHead" src="images/theCat.svg" alt="Here was a cat &#128008;">
+        <script>rotateAnimation("catHead", 40);</script>
       </div>
 
       <!-- If the app cannot get actual currencies rates
