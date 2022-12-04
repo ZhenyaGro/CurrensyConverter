@@ -3,36 +3,25 @@
   margin: 0px;
 }
 
-header {}
-
-/* .container {
+header {
   background-color: bisque;
-  width: 50%;
-  height: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  overflow: auto;
-} */
-
-h1 {
   text-align: center;
 }
 
+.container {
+  background-color: burlywood;
+  text-align: center;
+  width: 80vw;
+  height: 60vh;
+}
 
-.theCat {
+.theCat,
+.catBody {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.catBody {
+#catBody {
   height: 70px;
-  position: absolute;
-  bottom: 0;
-  right: 0px;
 }
