@@ -13,61 +13,56 @@
 </head>
 
 <body>
-  <header>
-    <h1>Конвертер валют</h1>
-    <nav>
-      <a href="#">Главная</a>
-      <a href="#">Изменить API-ключ</a>
-      <a href="https://app.exchangerate-api.com/dashboard/confirmed" target="_blank">Новый API-ключ</a>
-    </nav>
-  </header>
+  <div class="app">
+    <header>
+      <h1>Конвертер валют</h1>
+      <nav>
+        <a href="#">Главная</a>
+        <a href="#">Изменить API-ключ</a>
+        <a href="https://app.exchangerate-api.com/dashboard/confirmed" target="_blank">Новый API-ключ</a>
+      </nav>
+    </header>
 
-  <main>
-    <div class="container" id="test">
-      <div class="currencies">
-        <select id="currencyFrom"></select>
-        <label for="currencyFrom">Базовая валюта</label>
-        <button id="swap">sync_alt</button>
-        <select id="currencyTo"></select>
-        <label for="currencyTo">Валюта конвертации</label>
+    <main>
+      <div class="workspace" id="test">
+        <div class="currencies">
+          <select id="currencyFrom"></select>
+          <label for="currencyFrom">Базовая валюта</label>
+          <button id="swap">sync_alt</button>
+          <select id="currencyTo"></select>
+          <label for="currencyTo">Валюта конвертации</label>
+        </div>
+        <div class="amounts">
+          <input type="number" id="amountFrom" placeholder="0" value="1" />
+          <div id="rate"></div>
+          <input type="number" id="amountTo" placeholder="0" disabled="disabled" />
+        </div>
+        <div class="numpad">
+          <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+          </div>
+          <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+          </div>
+          <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+          </div>
+          <div>
+            <button>&#9003;</button>
+            <button>0</button>
+            <button>.</button>
+          </div>
+        </div>
       </div>
-      <div class="amounts">
-        <input type="number" id="amountFrom" placeholder="0" value="1" />
-        <div id="rate"></div>
-        <input type="number" id="amountTo" placeholder="0" disabled="disabled" />
-      </div>
-      <div class="numpad">
-        <div>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-        </div>
-        <div>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-        </div>
-        <div>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-        </div>
-        <div>
-          <button>&#9003;</button>
-          <button>0</button>
-          <button>.</button>
-        </div>
-      </div>
-    </div>
 
 
-    <!-- The ginger cat -->
-    <div>
-      <div style="text-align: right;">
-        <img class="theCat" id="catBody" src="images/bodyForCat.png" alt="">
-        <img class="theCat" id="catHead" src="images/theCat.svg" alt="Here was a cat &#128008;">
-        <script>rotateAnimation("catHead", 40);</script>
-      </div>
+
 
       <!-- If the app cannot get actual currencies rates
       <div>
@@ -101,8 +96,15 @@
       </div>
     -->
 
-  </main>
-  <footer></footer>
+    </main>
+  </div>
+  <footer>
+    <!-- The ginger cat -->
+    <div style="text-align: right;">
+      <img class="theCat" id="catBody" src="images/bodyForCat.png" alt="">
+      <img class="theCat" id="catHead" src="images/theCat.svg" alt="Here was a cat &#128008;">
+      <script>rotateAnimation("catHead", 40);</script>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
