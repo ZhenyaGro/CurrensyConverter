@@ -10,9 +10,12 @@
 .app {
   display: block;
   border: 3px solid black;
+  border-radius: 20px;
+  background-color: beige;
   height: 60vh;
   width: 70vw;
   margin: 5vh auto;
+  overflow: hidden;
 }
 
 header {
