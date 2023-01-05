@@ -41,6 +41,11 @@ header {
   color: royalblue;
 }
 
+.button-number:hover,
+.button-delete:hover {
+  background-color: #F2DEDC;
+}
+
 .cat,
 .cat-body {
   position: absolute;
