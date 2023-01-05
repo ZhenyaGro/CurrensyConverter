@@ -29,6 +29,47 @@ header {
   text-align: center;
 }
 
+.currencies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.convert__from,
+.convert__to {
+  text-align: left;
+}
+
+.currency-label {
+  font-size: small;
+}
+
+.currency__block {
+  display: block;
+}
+
+.convert__from {
+  display: block;
+}
+
+.currency-field {
+  width: 100%;
+  box-sizing: border-box;
+  height: 3vh;
+  border-radius: 5px;
+}
+
+.swap__button {
+  display: block;
+  width: 4vw;
+  height: 4vh;
+  font-size: large;
+  border-radius: 8px;
+}
+
 .button-number,
 .button-delete {
   width: 10vw;
@@ -43,7 +84,8 @@ header {
 }
 
 .button-number:hover,
-.button-delete:hover {
+.button-delete:hover,
+.swap__button:hover {
   background-color: #F2DEDC;
 }
 

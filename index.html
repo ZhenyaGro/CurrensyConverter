@@ -26,17 +26,19 @@
     <main>
       <div class="workspace">
         <div class="currencies">
-          <label for="currency-from">Базовая валюта</label>
-          <select id="currency-from"></select>
-          <button id="swap">&#8644;</button>
-          <label for="currency-to">Валюта конвертации</label>
-          <select id="currency-to"></select>
+          <div class="convert__from">
+            <label class="currency__block currency-label" for="currency-from">Базовая валюта</label>
+            <select class="currency__block currency-field" id="currency-from"></select>
+            <input class="currency-field" type="number" id="amount-from" placeholder="0" value="1" />
+          </div>
+          <button class="swap__button" id="swap">&#8644;</button>
+          <div class="convert__to">
+            <label class="currency__block currency-label" for="currency-to">Валюта конвертации</label>
+            <select class="currency__block currency-field" id="currency-to"></select>
+            <input class="currency-field" type="number" id="amount-to" placeholder="0" disabled="disabled" />
+          </div>
         </div>
-        <div class="amounts">
-          <input type="number" id="amount-from" placeholder="0" value="1" />
-          <span id="rate"></span>
-          <input type="number" id="amount-to" placeholder="0" disabled="disabled" />
-        </div>
+        <div id="rate"></div>
         <div class="numpad">
           <div>
             <button class="button-number">7</button>
