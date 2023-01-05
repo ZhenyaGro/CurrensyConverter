@@ -22,6 +22,6 @@ swap.addEventListener('click', () => {
 });
 
 // Execute functions
-setLanguage();
+//setLanguage();
 fillCurrencies();
 getCurrenciesRates();

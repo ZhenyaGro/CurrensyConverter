@@ -20,7 +20,7 @@ function getCurrenciesRates() {
     });
 
 }
-
+/*
 function setLanguage() {
   const userLanguage = window.navigator.language.substr(0, 2);
   let docLanguage = document.getElementsByTagName('html')[0].getAttribute('lang');
@@ -47,6 +47,7 @@ function setLanguage() {
     langNote.show();
   }
 }
+*/
 
 function fillCurrencies() {
   // The lis of supported currencies got here: https://www.exchangerate-api.com/docs/supported-currencies

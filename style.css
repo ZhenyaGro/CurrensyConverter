@@ -1,7 +1,7 @@
-/** {
+* {
   padding: 0px;
   margin: 0px;
-}*/
+}
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +12,7 @@
   border: 3px solid black;
   height: 60vh;
   width: 70vw;
-  margin: 0 auto;
+  margin: 5vh auto;
 }
 
 header {
@@ -25,13 +25,26 @@ header {
   text-align: center;
 }
 
-.theCat,
-.catBody {
+.button-number,
+.button-delete {
+  width: 10vw;
+  height: 5vh;
+  margin: 0.1%;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.button-delete {
+  color: royalblue;
+}
+
+.cat,
+.cat-body {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-#catBody {
+#cat-body {
   height: 70px;
 }
