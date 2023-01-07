@@ -10,7 +10,7 @@ body {
 
 .app {
   display: block;
-  border: 3px solid black;
+  border: 5px solid black;
   border-radius: 20px;
   background-color: beige;
   height: 60vh;
@@ -68,6 +68,15 @@ header {
   height: 4vh;
   font-size: large;
   border-radius: 8px;
+}
+
+#rate {
+  margin: 5px auto;
+  background-color: wheat;
+  border: 2px solid black;
+  width: 12vw;
+  min-width: 180px;
+  border-radius: 10px;
 }
 
 .button-number,
