@@ -37,7 +37,6 @@ hr {
   text-align: center;
   width: 70%;
   margin: 0 auto;
-  /* background-color: aquamarine; */
 }
 
 .currencies {
@@ -48,11 +47,6 @@ hr {
   margin: 0 auto;
 }
 
-/* @media (max-width: 1200px) {
-  .currencies {
-    flex-direction: column;
-  }
-} */
 
 .convert__from,
 .convert__to {
@@ -129,4 +123,26 @@ hr {
 
 #cat-body {
   height: 70px;
+}
+
+@media (max-width: 425px) {
+  .app {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+  }
+
+  .workspace {
+    width: 100%;
+  }
+
+  .currencies {
+    flex-direction: column;
+  }
+
+  .numpad,
+  .cat-body,
+  .cat {
+    display: none;
+  }
 }
