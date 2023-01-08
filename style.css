@@ -12,7 +12,7 @@ body {
   display: block;
   border: 5px solid black;
   border-radius: 20px;
-  background-color: burlywood;
+  background-color: bisque;
   width: 50vw;
   margin: 5vh auto;
   overflow: hidden;
@@ -35,6 +35,9 @@ hr {
   padding-bottom: 32px;
   background-color: bisque;
   text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
 }
 
 .currencies {
@@ -42,15 +45,14 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .currencies {
     flex-direction: column;
   }
-}
+} */
 
 .convert__from,
 .convert__to {
@@ -94,13 +96,18 @@ hr {
   border-radius: 10px;
 }
 
+.numpad {
+  display: flex;
+  justify-content: space-around;
+}
+
 .button-number,
 .button-delete {
   width: 10vw;
   height: 5vh;
-  margin: 0.1%;
   border-radius: 10px;
   font-size: large;
+  display: block;
 }
 
 .button-delete {
