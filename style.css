@@ -130,6 +130,7 @@ hr {
 .button-delete:hover,
 .swap__button:hover {
   background-color: #81B29A;
+  color: #F4F1DE;
 }
 
 .button-number:active,
@@ -142,12 +143,13 @@ hr {
   transform: scale(1.1);
 }
 
-.cat,
-.cat-body {
+.ginger-cat {
   position: absolute;
   bottom: 0;
   right: 0;
 }
+
+.ginger-cat:hover {}
 
 #cat-body {
   height: 70px;
@@ -156,6 +158,7 @@ hr {
 #rate:hover {
   transform: scale(1.2);
 }
+
 
 @media (max-width: 1023px) {
   .currencies {
