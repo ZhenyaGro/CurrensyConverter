@@ -149,7 +149,13 @@ hr {
   right: 0;
 }
 
-.ginger-cat:hover {}
+#cat-body {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* .ginger-cat:hover {} */
 
 #cat-body {
   height: 70px;
