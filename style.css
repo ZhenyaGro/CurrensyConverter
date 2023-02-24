@@ -10,7 +10,7 @@ body {
 
 .app {
   display: block;
-  border: 4px solid black;
+  border: 4px solid #3D405B;
   border-radius: 20px;
   background-color: bisque;
   width: 50vw;
@@ -19,21 +19,22 @@ body {
 }
 
 header {
-  background-color: burlywood;
+  background-color: #E07A5F;
   text-align: center;
+  color: white;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 hr {
-  border: 2px solid black;
-  background-color: black;
+  border: 2px solid #3D405B;
+  background-color: #3D405B;
 }
 
 .workspace {
   padding-top: 16px;
   padding-bottom: 32px;
-  background-color: bisque;
+  background-color: #F2CC8F;
   text-align: center;
   margin: 0 auto;
 }
@@ -75,6 +76,9 @@ hr {
   padding: 4px;
   margin-bottom: 4px;
   border-radius: 5px;
+  border-color: #3D405B;
+  background-color: #F4F1DE;
+  transition: 0.3s;
 }
 
 .swap__button {
@@ -87,8 +91,9 @@ hr {
 
 #rate {
   margin: 0 auto;
-  background-color: wheat;
-  border: 2px solid black;
+  background-color: #E07A5F;
+  border: 2px solid #3D405B;
+  color: white;
   width: 12vw;
   min-width: 180px;
   border-radius: 10px;
@@ -107,16 +112,33 @@ hr {
   border-radius: 10px;
   font-size: large;
   display: block;
+  border-color: #3D405B;
 }
 
 .button-delete {
   color: royalblue;
 }
 
+.swap__button,
+.button-number,
+.button-delete {
+  background-color: #F4F1DE;
+}
+
 .button-number:hover,
 .button-delete:hover,
 .swap__button:hover {
-  background-color: #F2DEDC;
+  background-color: #81B29A;
+}
+
+.button-number:active,
+.button-delete:active,
+.swap__button:active {
+  border: 0;
+}
+
+.currency-field:hover {
+  transform: scale(1.1);
 }
 
 .cat,
