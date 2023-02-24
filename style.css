@@ -92,6 +92,7 @@ hr {
   width: 12vw;
   min-width: 180px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .numpad {
@@ -127,6 +128,10 @@ hr {
 
 #cat-body {
   height: 70px;
+}
+
+#rate:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 425px) {
