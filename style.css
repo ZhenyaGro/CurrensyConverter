@@ -108,11 +108,12 @@ hr {
 .button-number,
 .button-delete {
   width: 10vw;
-  height: 5vh;
+  height: 6vh;
   border-radius: 10px;
   font-size: large;
   display: block;
   border-color: #3D405B;
+  margin-bottom: 8px;
 }
 
 .button-delete {
