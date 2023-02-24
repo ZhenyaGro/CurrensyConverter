@@ -10,7 +10,7 @@ body {
 
 .app {
   display: block;
-  border: 5px solid black;
+  border: 4px solid black;
   border-radius: 20px;
   background-color: bisque;
   width: 50vw;
@@ -35,14 +35,18 @@ hr {
   padding-bottom: 32px;
   background-color: bisque;
   text-align: center;
-  width: 70%;
   margin: 0 auto;
+}
+
+.container {
+  display: inline-block;
+  width: 70%;
 }
 
 .currencies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 12px auto;
 }
@@ -92,7 +96,7 @@ hr {
 
 .numpad {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .button-number,

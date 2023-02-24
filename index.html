@@ -21,40 +21,43 @@
 
     <main>
       <div class="workspace">
-        <div id="rate"></div>
-        <div class="currencies">
-          <div class="convert__from">
-            <label class="currency__block currency-label" for="currency-from">Базовая валюта</label>
-            <select class="currency__block currency-field" id="currency-from"></select>
-            <input class="currency-field" type="number" id="amount-from" placeholder="0" value="1" />
+        <div class="container">
+          <div id="rate"></div>
+          <div class="currencies">
+            <div class="convert__from">
+              <label class="currency__block currency-label" for="currency-from">Базовая валюта</label>
+              <select class="currency__block currency-field" id="currency-from"></select>
+              <input class="currency-field" type="number" id="amount-from" placeholder="0" value="1" />
+            </div>
+            <button class="swap__button" id="swap">&#8644;</button>
+            <div class="convert__to">
+              <label class="currency__block currency-label" for="currency-to">Валюта конвертации</label>
+              <select class="currency__block currency-field" id="currency-to"></select>
+              <input class="currency-field" type="number" id="amount-to" placeholder="0" disabled="disabled" />
+            </div>
           </div>
-          <button class="swap__button" id="swap">&#8644;</button>
-          <div class="convert__to">
-            <label class="currency__block currency-label" for="currency-to">Валюта конвертации</label>
-            <select class="currency__block currency-field" id="currency-to"></select>
-            <input class="currency-field" type="number" id="amount-to" placeholder="0" disabled="disabled" />
+          <div class="numpad">
+            <div class="numpad-column">
+              <button class="button-number">7</button>
+              <button class="button-number">8</button>
+              <button class="button-number">9</button>
+              <button class="button-delete">&#9003;</button>
+            </div>
+            <div class="numpad-column">
+              <button class="button-number">4</button>
+              <button class="button-number">5</button>
+              <button class="button-number">6</button>
+              <button class="button-number">0</button>
+            </div>
+            <div class="numpad-column">
+              <button class="button-number">1</button>
+              <button class="button-number">2</button>
+              <button class="button-number">3</button>
+              <button class="button-number">.</button>
+            </div>
           </div>
         </div>
-        <div class="numpad">
-          <div class="numpad-column">
-            <button class="button-number">7</button>
-            <button class="button-number">8</button>
-            <button class="button-number">9</button>
-            <button class="button-delete">&#9003;</button>
-          </div>
-          <div class="numpad-column">
-            <button class="button-number">4</button>
-            <button class="button-number">5</button>
-            <button class="button-number">6</button>
-            <button class="button-number">0</button>
-          </div>
-          <div class="numpad-column">
-            <button class="button-number">1</button>
-            <button class="button-number">2</button>
-            <button class="button-number">3</button>
-            <button class="button-number">.</button>
-          </div>
-        </div>
+
       </div>
 
 
