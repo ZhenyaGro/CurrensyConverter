@@ -25,3 +25,8 @@ swap.addEventListener('click', () => {
 //setLanguage();
 fillCurrencies();
 getCurrenciesRates();
+
+
+
+// Testing of numpad, buttons click
+const numpad = new Numpad();
