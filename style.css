@@ -100,7 +100,7 @@ hr {
   transition: 0.3s;
 }
 
-.numpad {
+.numpad-row {
   display: flex;
   justify-content: space-between;
 }
