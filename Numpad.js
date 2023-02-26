@@ -1,13 +1,13 @@
 class Numpad {
-  _buttons;
+  _$buttons;
 
   constructor() {
-    this._buttons = document
+    this._$buttons = document
       .getElementById('numpad')
       .querySelectorAll('button');
 
-    this._buttons.forEach(element => {
-      new Button(element, element.value);
+    this._$buttons.forEach($element => {
+      new Button($element, $element.value);
     });
   }
 
