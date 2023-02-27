@@ -170,6 +170,15 @@ hr {
   .currencies {
     flex-direction: column;
   }
+
+  .currency-field:hover {
+    transform: none;
+  }
+
+  .swap__button:hover {
+    pointer-events: none;
+  }
+
 }
 
 @media (max-width: 425px) {
