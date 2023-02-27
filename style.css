@@ -175,10 +175,11 @@ hr {
     transform: none;
   }
 
+  .button-number:hover,
+  .button-delete:hover,
   .swap__button:hover {
     pointer-events: none;
   }
-
 }
 
 @media (max-width: 425px) {
@@ -186,14 +187,32 @@ hr {
     width: 100%;
     margin: 0 auto;
     border-radius: 0;
+    border: 0;
   }
 
   .workspace {
     width: 100%;
+    height: 84vh;
   }
 
   .currencies {
-    flex-direction: column;
+    width: 100%;
+    /* flex-direction: column; */
+    display: block;
+  }
+
+  .swap__button {
+    margin: 0 auto;
+  }
+
+  .currency-field {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #rate {
+    padding: 4px;
+    border-radius: 20px;
   }
 
   .numpad,
