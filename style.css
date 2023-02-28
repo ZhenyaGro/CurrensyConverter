@@ -178,7 +178,8 @@ hr {
   .button-number:hover,
   .button-delete:hover,
   .swap__button:hover {
-    pointer-events: none;
+    background-color: #F4F1DE;
+    color: black;
   }
 }
 
