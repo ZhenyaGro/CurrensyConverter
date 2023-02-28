@@ -181,6 +181,13 @@ hr {
     background-color: #F4F1DE;
     color: black;
   }
+
+  .button-number:active,
+  .button-delete:active,
+  .swap__button:active {
+    background-color: #81B29A;
+    color: #F4F1DE;
+  }
 }
 
 @media (max-width: 425px) {
