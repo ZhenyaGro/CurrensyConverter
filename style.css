@@ -53,24 +53,24 @@ hr {
 }
 
 
-.convert__from,
-.convert__to {
+.convert-from,
+.convert-to {
   text-align: left;
 }
 
-.currency-label {
+.currency_label {
   font-size: small;
 }
 
-.currency__block {
+.currency_block {
   display: block;
 }
 
-.convert__from {
+.convert-from {
   display: block;
 }
 
-.currency-field {
+.currency_field {
   width: 100%;
   box-sizing: border-box;
   padding: 4px;
@@ -81,7 +81,7 @@ hr {
   transition: 0.3s;
 }
 
-.swap__button {
+.button_swap {
   display: block;
   width: 40px;
   height: 34px;
@@ -100,13 +100,13 @@ hr {
   transition: 0.3s;
 }
 
-.numpad-row {
+.numpad_row {
   display: flex;
   justify-content: space-between;
 }
 
-.button-number,
-.button-delete {
+.button_number,
+.button_delete {
   width: 10vw;
   height: 6vh;
   border-radius: 10px;
@@ -116,30 +116,30 @@ hr {
   margin-bottom: 8px;
 }
 
-.button-delete {
+.button_delete {
   color: royalblue;
 }
 
-.swap__button,
-.button-number,
-.button-delete {
+.button_swap,
+.button_number,
+.button_delete {
   background-color: #F4F1DE;
 }
 
-.button-number:hover,
-.button-delete:hover,
-.swap__button:hover {
+.button_number:hover,
+.button_delete:hover,
+.button_swap:hover {
   background-color: #81B29A;
   color: #F4F1DE;
 }
 
-.button-number:active,
-.button-delete:active,
-.swap__button:active {
+.button_number:active,
+.button_delete:active,
+.button_swap:active {
   border: 0;
 }
 
-.currency-field:hover {
+.currency_field:hover {
   transform: scale(1.1);
 }
 
@@ -171,20 +171,20 @@ hr {
     flex-direction: column;
   }
 
-  .currency-field:hover {
+  .currency_field:hover {
     transform: none;
   }
 
-  .button-number:hover,
-  .button-delete:hover,
-  .swap__button:hover {
+  .button_number:hover,
+  .button_delete:hover,
+  .button_swap:hover {
     background-color: #F4F1DE;
     color: black;
   }
 
-  .button-number:active,
-  .button-delete:active,
-  .swap__button:active {
+  .button_number:active,
+  .button_delete:active,
+  .button_swap:active {
     background-color: #81B29A;
     color: #F4F1DE;
   }
@@ -209,7 +209,7 @@ hr {
     display: block;
   }
 
-  .swap__button {
+  .button_swap {
     margin: 12px auto;
     padding: 0 12px;
     font-size: xx-large;
@@ -217,13 +217,13 @@ hr {
     height: auto;
   }
 
-  .currency-field {
+  .currency_field {
     width: 100%;
     font-size: large;
     padding: 12px;
   }
 
-  .currency-label {
+  .currency_label {
     font-size: medium;
   }
 
