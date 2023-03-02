@@ -165,6 +165,12 @@ hr {
   transform: scale(1.2);
 }
 
+@media (max-height: 599px) {
+  .numpad {
+    display: none;
+  }
+}
+
 
 @media (max-width: 1023px) {
   .currencies {
@@ -187,6 +193,11 @@ hr {
   .button_swap:active {
     background-color: #81B29A;
     color: #F4F1DE;
+  }
+
+  .cat-body,
+  .cat {
+    display: none;
   }
 }
 
@@ -232,9 +243,7 @@ hr {
     border-radius: 20px;
   }
 
-  .numpad,
-  .cat-body,
-  .cat {
+  .numpad {
     display: none;
   }
 }
