@@ -1,7 +1,7 @@
 class Button {
   #element;
   #value;
-  #$elAmount = document.getElementById('amount-from');
+  #$elAmount = document.querySelector('.amount-from');
 
   constructor($element, value) {
     this.#element = $element;

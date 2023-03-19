@@ -2,13 +2,13 @@
 // Free api (1500 requests available) https://app.exchangerate-api.com/dashboard/confirmed
 
 // Let constants and make the listeners
-const elCurrencyFrom = document.getElementById('currency-from');
-const elCurrencyTo = document.getElementById('currency-to');
-const elAmountFrom = document.getElementById('amount-from');
-const elAmountTo = document.getElementById('amount-to');
+const elCurrencyFrom = document.querySelector('.currency-from');
+const elCurrencyTo = document.querySelector('.currency-to');
+const elAmountFrom = document.querySelector('.amount-from');
+const elAmountTo = document.querySelector('.amount-to');
 
-const rateEl = document.getElementById('rate');
-const swap = document.getElementById('swap');
+const rateEl = document.querySelector('.rate');
+const swap = document.querySelector('.button_swap');
 
 elCurrencyFrom.addEventListener('change', getCurrenciesRates);
 elCurrencyTo.addEventListener('change', getCurrenciesRates);

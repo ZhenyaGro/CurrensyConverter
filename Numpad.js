@@ -3,7 +3,7 @@ class Numpad {
 
   constructor() {
     this.#$buttons = document
-      .getElementById('numpad')
+      .querySelector('.numpad')
       .querySelectorAll('button');
 
     this.#$buttons.forEach($element => {
