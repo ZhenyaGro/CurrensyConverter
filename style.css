@@ -10,7 +10,7 @@ body {
 
 .app {
   display: block;
-  border: 4px solid #3D405B;
+  border: 4px solid #1D3557;
   border-radius: 20px;
   background-color: bisque;
   width: 50vw;
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: #E07A5F;
+  background-color: #E63946;
   text-align: center;
   color: white;
   padding-top: 16px;
@@ -27,14 +27,14 @@ header {
 }
 
 hr {
-  border: 2px solid #3D405B;
-  background-color: #3D405B;
+  border: 2px solid #1D3557;
+  background-color: #1D3557;
 }
 
 .workspace {
   padding-top: 16px;
   padding-bottom: 32px;
-  background-color: #F2CC8F;
+  background-color: #A8DADC;
   text-align: center;
   margin: 0 auto;
 }
@@ -76,8 +76,8 @@ hr {
   padding: 4px;
   margin-bottom: 4px;
   border-radius: 5px;
-  border-color: #3D405B;
-  background-color: #F4F1DE;
+  border-color: #1D3557;
+  background-color: #F1FAEE;
   transition: 0.3s;
 }
 
@@ -86,13 +86,13 @@ hr {
   width: 30px;
   padding: 5px;
   border-radius: 8px;
-  border: 2px solid black;
+  border: 2px solid #1D3557;
 }
 
 .rate {
   margin: 0 auto;
-  background-color: #E07A5F;
-  border: 2px solid #3D405B;
+  background-color: #E63946;
+  border: 2px solid #1D3557;
   color: white;
   width: 12vw;
   min-width: 180px;
@@ -112,7 +112,7 @@ hr {
   border-radius: 10px;
   font-size: large;
   display: block;
-  border-color: #3D405B;
+  border-color: #1D3557;
   margin-bottom: 8px;
 }
 
@@ -123,14 +123,14 @@ hr {
 .button_swap,
 .button_number,
 .button_delete {
-  background-color: #F4F1DE;
+  background-color: #F1FAEE;
 }
 
 .button_number:hover,
 .button_delete:hover,
 .button_swap:hover {
-  background-color: #81B29A;
-  color: #F4F1DE;
+  background-color: #457B9D;
+  color: #F1FAEE;
 }
 
 .button_number:active,
@@ -184,7 +184,7 @@ hr {
   .button_number:hover,
   .button_delete:hover,
   .button_swap:hover {
-    background-color: #F4F1DE;
+    background-color: #F1FAEE;
     color: black;
   }
 
@@ -192,7 +192,7 @@ hr {
   .button_delete:active,
   .button_swap:active {
     background-color: #81B29A;
-    color: #F4F1DE;
+    color: #F1FAEE;
   }
 
   .cat-body,
