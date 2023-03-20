@@ -143,6 +143,11 @@ hr {
   border: 0;
 }
 
+.button_swap:active,
+.button_swap:hover {
+  content: url('./images/swap-arrows_white.png');
+}
+
 .currency_field:hover {
   transform: scale(1.1);
 }
