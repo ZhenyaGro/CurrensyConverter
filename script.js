@@ -32,12 +32,13 @@ class Currency {
 
 class BaseCurrency extends Currency {
 
-  constructor() {
-    // Get browser language
+  constructor(/* Get browser's language */) {
     // Set base currency
     // Set currency to convert
   }
 }
+
+// Class Browser language?
 
 class Rate {
   #currentRate = 0;
@@ -53,12 +54,12 @@ class Rate {
       .then(response => response.json())
       .then(data => {
         this.#currentRate = data.conversion_rates[currencyTo];
-        return this.#currentRate;
       })
       .catch(() => {
         alert('Не удалось получить актуальные курсы валют');
-        return this.#currentRate;
       });
+
+    return this.#currentRate;
   }
 }
 
