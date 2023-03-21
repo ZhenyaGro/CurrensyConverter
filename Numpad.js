@@ -8,6 +8,7 @@ class Numpad {
 
     this.#$buttons.forEach($element => {
       new Button($element, $element.value);
+      // $element.addEventListener('click', getCurrenciesRates);
     });
   }
 
