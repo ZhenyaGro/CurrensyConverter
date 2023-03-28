@@ -8,6 +8,15 @@ class App {
   #$buttons;
 
   constructor() {
+    /*
+    new BaseCurrency(); // Set the base currency into selects
+    const baseInputValue = new BaseValue(); // Set value into input 'From'
+    new Numpad(baseInputValue.getValue); // Create the numpad, that creates the buttons
+    // 'getValue' will get the value when button click?
+    */
+
+
+    new BaseValue('.amount-from');
     this.#$buttons = document
       .querySelector('.numpad')
       .querySelectorAll('button');
@@ -31,6 +40,7 @@ class Currency {
 }
 
 class BaseCurrency extends Currency {
+  #userLanguage = window.navigator.language.substr(0, 2);
 
   constructor(/* Get browser's language */) {
     // Set base currency
@@ -60,6 +70,22 @@ class Rate {
       });
 
     return this.#currentRate;
+  }
+}
+
+class BaseValue {
+  #$elInput;
+
+  constructor(className) {
+    this.#$elInput = document.querySelector(className);
+    this.#$elInput.addEventListener('change', () => {
+      console.log(this.#$elInput.value);
+      return this.#$elInput.value;
+    });
+  }
+
+  getValue() {
+    return this.#$elInput.value;
   }
 }
 
