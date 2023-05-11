@@ -12,6 +12,8 @@ class Button {
       if (this.#value == -1)
         this.#$elAmount.value = this.#$elAmount.value.slice(0, -1);
       else this.#$elAmount.value += this.#value;
+
+      getCurrenciesRates()
     });
   }
 }
