@@ -229,4 +229,11 @@ hr {
   .numpad {
     display: none;
   }
+}
+.disabled,
+.disabled:hover,
+.disabled:active {
+  background-color: gainsboro;
+  color: black;
+  border: 2px solid black;
 }/*# sourceMappingURL=style.css.map */

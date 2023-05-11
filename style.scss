@@ -253,3 +253,11 @@ hr {
     display: none;
   }
 }
+
+.disabled,
+.disabled:hover,
+.disabled:active {
+  background-color: $background-color;
+  color: black;
+  border: 2px solid black;
+}
